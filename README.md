@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot/Frontend%20Mentor%20Single%20Price%20Grid%20Component-mobile.png)
+![](./screenshot/Frontend%20Mentor%20Single%20Price%20Grid%20Component-desktop.png)
 
 ### Links
 
