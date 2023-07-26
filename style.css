@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary_cyan: hsl(179, 62%, 43%);
+    --primary_yellow: hsl(71, 73%, 54%);
+    --neutral_gray: hsl(204, 43%, 93%);
+    --netural_blue: hsl(218, 22%, 67%);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 99vh;
+    background-color: var(--neutral_gray);
+}
+
+h1{
+    color: var(--primary_cyan);
+    font-family: Karla, sans-serif;
+    font-size: 1.3rem;
+}
+
+h2{
+    color: white;
+    font-family: Karla, sans-serif;
+    font-size: 1.1rem;
+}
+
+p{
+    font-family: Karla, sans-serif;
+    font-size: 1rem;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.green {
+    color: var(--primary_yellow);
+}
+
+.small {
+    font-size: .9rem;
+}
+
+.lnheight{
+    line-height: 1.7rem;
+}
+
+.blue{
+    color: var(--netural_blue);
+}
+
+.white{
+    color: white;
+}
+
+.container{
+    width: 325px;
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas:
+        "com"
+        "sub"
+        "why";
+    align-items: center;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 20px hsla(217, 22%, 67%, 0.637);;
+}
+
+.community{
+    grid-area: com;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border-radius: 7px 7px 0px 0px;
+    height: 100%;
+    padding: 1.5rem;
+}
+
+.community h1{
+    padding-bottom: .5rem;
+}
+
+.subscription{
+    grid-area: sub;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--primary_cyan);
+    height: 100%;
+    padding: 1.5rem;
+}
+
+.subscription #month{
+    color: rgba(255, 255, 255, 0.438);
+    text-justify: center;
+    margin-bottom: -15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.subscription span{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+button{
+    margin-top: 5px;
+    color: white;
+    background-color: var(--primary_yellow);
+    border: none;
+    height: 3rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: Karla, sans-serif;
+    box-shadow: 0px 5px 15px hsla(178, 61%, 30%, 0.301);
+}
+
+.why_us{
+    grid-area: why;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1.5rem;
+    height: 100%;
+    background-color: rgb(74, 190, 189);
+    border-radius: 0 0 7px 7px;
+}
+
+.why_us ul li{
+    font-family: Karla, sans-serif;
+    color: rgba(255, 255, 255, 0.767);
+    list-style: none;
+    line-height: 1.3rem;
+}
+    
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 476px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+            "com com"
+            "sub why";
+        width: 635px;
+    }
+
+    .community{
+        grid-area: com;
+        padding: 2.5rem;
+        gap: 10px;
+    }
+
+    .community p{
+        padding-right: 50px;
+    }
+
+    .subscription{
+        grid-area: sub;
+        border-radius: 0 0 0 7px;
+        padding: 2.5rem;
+    }
+
+    .why_us{
+        grid-area: why;
+        border-radius: 0 0 7px 0;
+    }
+}
