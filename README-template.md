@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/mobile-first-responsive-single-price-grid-component-jrTT6_18or)
+- Live Site URL: [GitHub Pages](https://n-d-m.github.io/single-price-grid-component/)
 
 ## My process
 
