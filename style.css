@@ -180,6 +180,11 @@ button{
         padding: 2.5rem;
     }
 
+    button:hover{
+        cursor: pointer;
+        background-color: hsl(71, 57%, 46%);
+    }
+
     .why_us{
         grid-area: why;
         border-radius: 0 0 7px 0;
